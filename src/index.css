@@ -162,7 +162,7 @@ body {
 .card-info {
   transition: 0.3s all ease-in-out;
   background-color: rgb(56, 62, 68);
-  bottom: 60px;
+  bottom: 80px;
   left: 0px;
   right: 0px;
   padding: 10px;
@@ -175,4 +175,15 @@ body {
 
 .card-layout:hover .card-info {
   display: block;
+}
+
+.card-extra {
+  text-align: start;
+  margin-left: 20px;
+}
+
+.rating {
+  height: 15px;
+  width: 15px;
+  margin-right: 5px;
 }
