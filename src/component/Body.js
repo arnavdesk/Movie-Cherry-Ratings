@@ -1,6 +1,7 @@
 import React from "react";
 import MovieCard from "./MovieCard";
 import { data } from "../data";
+import { addMovies } from "../actions";
 
 class Body extends React.Component {
   componentDidMount() {
@@ -11,17 +12,14 @@ class Body extends React.Component {
       console.log("updated");
       this.forceUpdate();
     });
-    store.dispatch({
-      type: "ADD_MOVIES",
-      movies: data,
-    });
+    store.dispatch(addMovies(data));
     console.log("state", store.getState());
   }
   render() {
-    const movies = this.props.store.getState();
+    const state = this.props.store.getState();
     return (
       <div className="body">
-        {movies.map((movie, index) => {
+        {state.movies.map((movie, index) => {
           return <MovieCard movie={movie} key={"movie-" + index} />;
         })}
       </div>
