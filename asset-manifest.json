@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/Movie-Cherry/static/css/main.1a854e8a.chunk.css",
-    "main.js": "/Movie-Cherry/static/js/main.4b91b5a7.chunk.js",
-    "main.js.map": "/Movie-Cherry/static/js/main.4b91b5a7.chunk.js.map",
-    "runtime-main.js": "/Movie-Cherry/static/js/runtime-main.0b4c8afc.js",
-    "runtime-main.js.map": "/Movie-Cherry/static/js/runtime-main.0b4c8afc.js.map",
-    "static/js/2.99d9247e.chunk.js": "/Movie-Cherry/static/js/2.99d9247e.chunk.js",
-    "static/js/2.99d9247e.chunk.js.map": "/Movie-Cherry/static/js/2.99d9247e.chunk.js.map",
-    "index.html": "/Movie-Cherry/index.html",
-    "precache-manifest.779f240256a83ae85b18316b4996c5ab.js": "/Movie-Cherry/precache-manifest.779f240256a83ae85b18316b4996c5ab.js",
-    "service-worker.js": "/Movie-Cherry/service-worker.js",
-    "static/css/main.1a854e8a.chunk.css.map": "/Movie-Cherry/static/css/main.1a854e8a.chunk.css.map",
-    "static/js/2.99d9247e.chunk.js.LICENSE.txt": "/Movie-Cherry/static/js/2.99d9247e.chunk.js.LICENSE.txt"
+    "main.css": "/Movie-Cherry-Ratings/static/css/main.1a854e8a.chunk.css",
+    "main.js": "/Movie-Cherry-Ratings/static/js/main.4b91b5a7.chunk.js",
+    "main.js.map": "/Movie-Cherry-Ratings/static/js/main.4b91b5a7.chunk.js.map",
+    "runtime-main.js": "/Movie-Cherry-Ratings/static/js/runtime-main.02fee19d.js",
+    "runtime-main.js.map": "/Movie-Cherry-Ratings/static/js/runtime-main.02fee19d.js.map",
+    "static/js/2.99d9247e.chunk.js": "/Movie-Cherry-Ratings/static/js/2.99d9247e.chunk.js",
+    "static/js/2.99d9247e.chunk.js.map": "/Movie-Cherry-Ratings/static/js/2.99d9247e.chunk.js.map",
+    "index.html": "/Movie-Cherry-Ratings/index.html",
+    "precache-manifest.37077701162e66f2246aafb297e6ed7f.js": "/Movie-Cherry-Ratings/precache-manifest.37077701162e66f2246aafb297e6ed7f.js",
+    "service-worker.js": "/Movie-Cherry-Ratings/service-worker.js",
+    "static/css/main.1a854e8a.chunk.css.map": "/Movie-Cherry-Ratings/static/css/main.1a854e8a.chunk.css.map",
+    "static/js/2.99d9247e.chunk.js.LICENSE.txt": "/Movie-Cherry-Ratings/static/js/2.99d9247e.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.0b4c8afc.js",
+    "static/js/runtime-main.02fee19d.js",
     "static/js/2.99d9247e.chunk.js",
     "static/css/main.1a854e8a.chunk.css",
     "static/js/main.4b91b5a7.chunk.js"
