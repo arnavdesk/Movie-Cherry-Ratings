@@ -1,27 +1,21 @@
 import React from "react";
 import MovieCard from "./MovieCard";
-import { data } from "../data";
-import { addMovies } from "../actions";
 
 class Body extends React.Component {
-  componentDidMount() {
-    const { store } = this.props;
-    // Make an API call and get data
-    // Dispatch action
-    store.subscribe(() => {
-      console.log("updated");
-      this.forceUpdate();
-    });
-    store.dispatch(addMovies(data));
-    console.log("state", store.getState());
-  }
   render() {
     const state = this.props.store.getState();
+    const displayMoviesList = state.showFavourites
+      ? state.favourites
+      : state.movies;
+    const { store } = this.props;
     return (
       <div className="body">
-        {state.movies.map((movie, index) => {
-          return <MovieCard movie={movie} key={"movie-" + index} />;
+        {displayMoviesList.map((movie, index) => {
+          return (
+            <MovieCard movie={movie} key={"movie-" + index} store={store} />
+          );
         })}
+        {displayMoviesList.length === 0 && <div>No Favourites To Show</div>}
       </div>
     );
   }

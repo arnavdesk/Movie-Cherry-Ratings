@@ -1,7 +1,19 @@
 import React from "react";
+import { setShowFavourites } from "../actions";
 
 class Navbar extends React.Component {
+  changeTab = (value) => {
+    this.props.store.dispatch(setShowFavourites(value));
+  };
+
   render() {
+    const { showFavourites } = this.props.store.getState();
+    const bgCF = showFavourites
+      ? { backgroundColor: "rgb(28, 88, 152)" }
+      : { backgroundColor: "rgb(28, 30, 33)" };
+    const bgCH = !showFavourites
+      ? { backgroundColor: "rgb(28, 88, 152)" }
+      : { backgroundColor: "rgb(28, 30, 33)" };
     return (
       <div className="navbar">
         <img
@@ -11,8 +23,20 @@ class Navbar extends React.Component {
         ></img>
         <div className="app-name">MovieCherry</div>
         <div className="tabs">
-          <button className="nav-button">Home</button>
-          <button className="nav-button">Favourite</button>
+          <button
+            style={bgCH}
+            className="nav-button"
+            onClick={() => this.changeTab(false)}
+          >
+            Home
+          </button>
+          <button
+            style={bgCF}
+            className="nav-button"
+            onClick={() => this.changeTab(true)}
+          >
+            Favourite
+          </button>
         </div>
         <div className="search-container" id="search-container">
           <input
