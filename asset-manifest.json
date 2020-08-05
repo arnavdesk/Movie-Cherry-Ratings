@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/Movie-Cherry/static/css/main.1a854e8a.chunk.css",
+    "main.js": "/Movie-Cherry/static/js/main.4b91b5a7.chunk.js",
+    "main.js.map": "/Movie-Cherry/static/js/main.4b91b5a7.chunk.js.map",
+    "runtime-main.js": "/Movie-Cherry/static/js/runtime-main.0b4c8afc.js",
+    "runtime-main.js.map": "/Movie-Cherry/static/js/runtime-main.0b4c8afc.js.map",
+    "static/js/2.99d9247e.chunk.js": "/Movie-Cherry/static/js/2.99d9247e.chunk.js",
+    "static/js/2.99d9247e.chunk.js.map": "/Movie-Cherry/static/js/2.99d9247e.chunk.js.map",
+    "index.html": "/Movie-Cherry/index.html",
+    "precache-manifest.779f240256a83ae85b18316b4996c5ab.js": "/Movie-Cherry/precache-manifest.779f240256a83ae85b18316b4996c5ab.js",
+    "service-worker.js": "/Movie-Cherry/service-worker.js",
+    "static/css/main.1a854e8a.chunk.css.map": "/Movie-Cherry/static/css/main.1a854e8a.chunk.css.map",
+    "static/js/2.99d9247e.chunk.js.LICENSE.txt": "/Movie-Cherry/static/js/2.99d9247e.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0b4c8afc.js",
+    "static/js/2.99d9247e.chunk.js",
+    "static/css/main.1a854e8a.chunk.css",
+    "static/js/main.4b91b5a7.chunk.js"
+  ]
+}
