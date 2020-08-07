@@ -16,7 +16,8 @@ class MovieCard extends React.Component {
 
   isMovieFavourite = (movie) => {
     const { store } = this.props;
-    const { favourites } = store.getState();
+    const { movies } = store.getState();
+    const { favourites } = movies;
     const index = favourites.indexOf(movie);
     if (index !== -1) {
       // Movie found

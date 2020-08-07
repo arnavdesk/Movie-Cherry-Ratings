@@ -3,10 +3,10 @@ import MovieCard from "./MovieCard";
 
 class Body extends React.Component {
   render() {
-    const state = this.props.store.getState();
-    const displayMoviesList = state.showFavourites
-      ? state.favourites
-      : state.movies;
+    const { movies } = this.props.store.getState();
+    const displayMoviesList = movies.showFavourites
+      ? movies.favourites
+      : movies.movies;
     const { store } = this.props;
     return (
       <div className="body">

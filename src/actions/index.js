@@ -1,13 +1,3 @@
-// {
-//     type:"ADD_MOVIES",
-//     movies:[],
-// }
-
-// {
-//     type:"FAVOURITE",
-//     movies:[],
-// }
-
 // Action types
 export const ADD_MOVIES = "ADD_MOVIES";
 export const ADD_TO_FAVOURITES = "ADD_TO_FAVOURITES";

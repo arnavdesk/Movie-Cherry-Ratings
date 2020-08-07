@@ -58,9 +58,9 @@ body {
   padding: 8px;
 }
 
-.nav-button:first-child {
+/* .nav-button:first-child {
   background-color: rgb(28, 88, 152);
-}
+} */
 
 .nav-button:hover {
   background-color: rgb(56, 62, 68);
