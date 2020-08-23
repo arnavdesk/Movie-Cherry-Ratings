@@ -58,15 +58,12 @@ body {
   padding: 8px;
 }
 
-/* .nav-button:first-child {
-  background-color: rgb(28, 88, 152);
-} */
-
 .nav-button:hover {
-  background-color: rgb(56, 62, 68);
+  background-color: rgb(56, 62, 68) !important;
 }
 
 .search-container {
+  position: relative;
   display: flex;
   align-items: center;
   margin-left: auto;
@@ -74,11 +71,12 @@ body {
 }
 
 .input-bar {
+  width: 300px;
   background-color: rgb(56, 62, 68);
   outline: none;
   border: 0px;
   color: white;
-  border-radius: 10px;
+  border-radius: 5px;
   padding: 5px 10px;
   font-size: 0.6em;
   border-bottom-right-radius: 0px;
@@ -89,12 +87,13 @@ body {
 }
 
 .search-button {
+  cursor: pointer;
   padding: 5px 10px;
   font-size: 0.6em;
   color: white;
   outline: none;
   border: 0px;
-  border-radius: 10px;
+  border-radius: 5px;
   background-color: rgb(56, 62, 68);
   border-bottom-left-radius: 0px;
   border-top-left-radius: 0px;
@@ -186,4 +185,41 @@ body {
   height: 15px;
   width: 15px;
   margin-right: 5px;
+}
+
+/* Search results */
+
+.search-results {
+  width: 100%;
+  top: 35px;
+  border-radius: 5px;
+  position: absolute;
+  background-color: rgb(56, 62, 68);
+  cursor: pointer;
+  max-height: 350px;
+  overflow-y: scroll;
+}
+
+.single-result {
+  padding: 10px;
+  align-items: flex-start;
+  display: flex;
+}
+
+.single-result:hover {
+  background-color: rgb(42, 46, 51);
+}
+
+.movie-poster img {
+  height: 75px;
+  width: 50px;
+}
+
+.movie-details {
+  padding: 0px 10px;
+}
+
+.movie-text {
+  font-size: 0.5em;
+  margin: 5px;
 }

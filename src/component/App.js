@@ -2,9 +2,13 @@ import React from "react";
 import Navbar from "./Navbar";
 import Body from "./Body";
 import { data } from "../data";
-import { addMovies } from "../actions";
+import { addMovies, setShowSearch } from "../actions";
 
 class App extends React.Component {
+  constructor() {
+    super();
+    this.searchContainerRef = React.createRef();
+  }
   componentDidMount() {
     const { store } = this.props;
     // Make an API call and get data
@@ -16,11 +20,24 @@ class App extends React.Component {
     store.dispatch(addMovies(data));
     console.log("state", store.getState());
   }
+
+  handleOutSideClick = (e) => {
+    const { store } = this.props;
+    if (
+      this.searchContainerRef.current &&
+      this.searchContainerRef.current.contains(e.target)
+    ) {
+      return;
+    }
+    store.dispatch(setShowSearch(false));
+  };
+
   render() {
+    const { store } = this.props;
     return (
-      <div className="App">
-        <Navbar store={this.props.store} />
-        <Body store={this.props.store} />
+      <div ref={this.appRef} onClick={this.handleOutSideClick} className="App">
+        <Navbar store={store} searchContainerRef={this.searchContainerRef} />
+        <Body store={store} />
       </div>
     );
   }

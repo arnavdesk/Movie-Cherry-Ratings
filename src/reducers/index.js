@@ -3,13 +3,18 @@ import {
   ADD_TO_FAVOURITES,
   REMOVE_FROM_FAVOURITES,
   SET_SHOW_FAVOURITES,
+  ADD_MOVIE_SEARCH_RESULT,
+  SHOW_SEARCH,
 } from "../actions";
+
 import { combineReducers } from "redux";
+
 const initialMovieState = {
   movies: [],
   favourites: [],
   showFavourites: false,
 };
+
 export function movies(state = initialMovieState, action) {
   switch (action.type) {
     case ADD_MOVIES:
@@ -29,10 +34,19 @@ export function movies(state = initialMovieState, action) {
 }
 
 const initialSearchState = {
-  result: {},
+  result: [],
+  showSearchResults: false,
 };
+
 export function search(state = initialSearchState, action) {
-  return state;
+  switch (action.type) {
+    case ADD_MOVIE_SEARCH_RESULT:
+      return { ...state, result: action.movies };
+    case SHOW_SEARCH:
+      return { ...state, showSearchResults: action.value };
+    default:
+      return state;
+  }
 }
 
 // const intitalRootState = {
